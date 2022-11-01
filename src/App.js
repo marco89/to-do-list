@@ -36,7 +36,6 @@ function App() {
   function deleteTask(id) {
     // creates a new array of all tasks with an id that is NOT the id we passed in to delete 
     // so its an array of all items that are not the one we want to delete
-    console.log(id);
     const retainedArray = tasks.filter(tasks => tasks.id !== id);
     // adds $retainedArray to the task list ($tasks) 
     setTasks(retainedArray);
